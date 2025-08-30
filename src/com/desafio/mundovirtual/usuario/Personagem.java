@@ -24,9 +24,19 @@ public abstract class Personagem {
 		this.mana = novoMana;
 	}
 	
-	public abstract void atacar(double dano, Personagem alvo, double distancia);
+	public String getNome() {
+		return nome;
+	}
 
-	
-	
+	public double getHp() {
+		return hp;
+	}
+
+	@Override
+	public String toString() {
+		return "Bernardo";
+	}
+
+	public abstract void atacar(double dano, Personagem alvo, double distancia);
 	
 }

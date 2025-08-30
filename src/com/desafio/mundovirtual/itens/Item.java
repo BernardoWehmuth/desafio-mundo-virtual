@@ -23,7 +23,7 @@ public class Item {
 	public void remover(int q) {
 		quantidade -= q;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Item [nome=" + nome + ", tipo=" + tipo + ", quantidade=" + quantidade + "]";

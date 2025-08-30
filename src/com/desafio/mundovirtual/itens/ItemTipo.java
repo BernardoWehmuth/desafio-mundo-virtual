@@ -5,7 +5,10 @@ public enum ItemTipo {
 	ARMADURA("Proteção para Personagem", 80),
 	POCAO("Recupera HP ou Mana", 50),
 	CETRO("Arma de Ataque para Magos", 100),
-	ARCO("Arma de Ataque para Arqueiros", 100);
+	ARCO("Arma de Ataque para Arqueiros", 100),
+	ALJAVA("Armazena Flechas", 100),
+	FLECHA("Usadas com um Arco", 100);
+
 	
 	
 	private final String descricao;
@@ -24,7 +27,7 @@ public enum ItemTipo {
 		return valorBase;
 	}
 	
-	public boolean éConsumivel() {
+	public boolean ehConsumivel() {
 		return this == POCAO;
 	}
 	
